@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\kategori;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 use App\Models\Website;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +11,7 @@ class KategoriController extends Controller
 {
     public function index()
     {
-        $kategori = kategori::all();
+        $kategori = Kategori::all();
 
         return view('kategori.index', [
             'title' => 'Kategori',
