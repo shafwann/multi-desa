@@ -9,7 +9,7 @@ class UploadKontenController extends Controller
 {
     public function index()
     {
-        return view('Upload-konten.index', [
+        return view('upload-konten.index', [
             'title' => 'Upload Konten'
         ]);
     }
