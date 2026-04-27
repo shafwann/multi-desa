@@ -46,7 +46,7 @@ class WebsiteController extends Controller
         //     ->where('desa_id', $user->desa_id)
         //     ->get();
 
-        return view('superadmin.website-List', [
+        return view('superadmin.website-list', [
             'title' => 'Website',
             'website' => $website,
             // 'editorpenulis' => $editorpenulis,
