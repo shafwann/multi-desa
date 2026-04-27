@@ -51,8 +51,8 @@ Route::post('logout', [LoginController::class, 'logout'])->name('logout')->middl
 
 //Super Admin
 Route::resource('admin-desa', AdminDesaController::class)->except(['show'])->middleware('auth');
-// Route::get('admin-desa/send-mail', [EmailController::class, 'sendmail']);
-// Route::resource('desa', DesaController::class)->except(['show'])->middleware('auth');
+Route::get('admin-desa/send-mail', [EmailController::class, 'sendmail']);
+Route::resource('desa', DesaController::class)->except(['show'])->middleware('auth');
 
 //Admin Desa
 Route::resource('editor-penulis', EditorPenulisController::class)->except(['show'])->middleware('auth');

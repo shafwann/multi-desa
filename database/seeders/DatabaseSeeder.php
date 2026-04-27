@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             LayananSeeder::class,
             KategoriSeeder::class,
             PendudukSeeder::class,
+            DesaSeeder::class,
             // PostinganSeeder::class,
         ]);
     }
